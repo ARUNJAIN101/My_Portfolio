@@ -85,7 +85,5 @@ alert("Message Sent Successfully!");
 this.reset();
 
 });
-
 }
-
 });
