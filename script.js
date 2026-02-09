@@ -1,12 +1,8 @@
-// ============================
 // WAIT UNTIL DOM LOADS
-// ============================
 
 document.addEventListener("DOMContentLoaded", function(){
 
-// ============================
 // TYPING EFFECT
-// ============================
 
 const typingElement = document.getElementById("typing");
 
@@ -46,9 +42,7 @@ typeEffect();
 }
 
 
-// ============================
 // DARK / LIGHT MODE TOGGLE
-// ============================
 
 const toggleBtn = document.getElementById("themeToggle");
 
@@ -76,9 +70,7 @@ toggleBtn.textContent = "🌙";
 }
 
 
-// ============================
 // CONTACT FORM
-// ============================
 
 const contactForm = document.getElementById("contactForm");
 
