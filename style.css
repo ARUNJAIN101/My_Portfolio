@@ -1,6 +1,5 @@
-/* ===============================
-   ROOT VARIABLES (Dark + Light)
-================================*/
+
+ /* //  ROOT VARIABLES (Dark + Light) */
 
 :root{
 --bg-color:#ffffff;
@@ -14,9 +13,7 @@
 --card-bg:rgba(255,255,255,0.05);
 }
 
-/* ===============================
-   GLOBAL
-================================*/
+/*GLOBAL*/
 
 body{
 margin:0;
@@ -33,9 +30,7 @@ max-width:1100px;
 margin:auto;
 }
 
-/* ===============================
-   NAVBAR
-================================*/
+/* NAVBAR*/
 
 nav{
 display:flex;
@@ -70,9 +65,7 @@ cursor:pointer;
 color:var(--text-color);
 }
 
-/* ===============================
-   MODERN HERO HEADER
-================================*/
+/* MODERN HERO HEADER*/
 
 .hero-modern{
 display:flex;
@@ -103,9 +96,7 @@ border-radius:50%;
 object-fit:cover;
 }
 
-/* ===============================
-   SKILLS SCROLLING BADGES
-================================*/
+/* SKILLS SCROLLING BADGES*/
 
 .skills-wrapper{
 margin-top:40px;
@@ -151,9 +142,7 @@ animation:scrollRight 15s linear infinite;
 100%{background-position:0%}
 }
 
-/* ===============================
-   GLASS CARDS
-================================*/
+/* GLASS CARDS*/
 
 .glass-container{
 display:flex;
@@ -173,9 +162,7 @@ transition:0.3s;
 transform:translateY(-5px);
 }
 
-/* ===============================
-   PROJECT CARDS
-================================*/
+/* PROJECT CARDS*/
 
 .project-card{
 background:var(--card-bg);
@@ -189,9 +176,7 @@ transition:0.3s;
 transform:scale(1.03);
 }
 
-/* ===============================
-   CONTACT PAGE
-================================*/
+/*CONTACT PAGE*/
 
 .contact-page{
 padding:80px 20px;
@@ -271,9 +256,7 @@ font-size:14px;
 opacity:0.8;
 }
 
-/* ===============================
-   MOBILE RESPONSIVE
-================================*/
+/*MOBILE RESPONSIVE*/
 
 @media(max-width:900px){
 
