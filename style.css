@@ -312,3 +312,51 @@ align-items:center;
 .resume-preview iframe {
   border: none;
 }
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill-tag {
+    background: #f0f0f0;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.notification {
+
+    position: fixed;
+    top: 20px;
+    right: -400px;
+
+    padding: 15px 25px;
+
+    border-radius: 10px;
+
+    color: white;
+
+    font-weight: 500;
+
+    z-index: 9999;
+
+    transition: all 0.4s ease;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.notification.show {
+    right: 20px;
+}
+
+.notification.success {
+    background: #28a745;
+}
+
+.notification.error {
+    background: #dc3545;
+}

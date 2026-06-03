@@ -68,22 +68,68 @@ toggleBtn.textContent = "🌙";
 };
 
 }
+});
 
+// CONTACT FORM EMAILJS
 
-// CONTACT FORM
+emailjs.init("tAGIIQG3sWUORy9t4");
 
 const contactForm = document.getElementById("contactForm");
 
-if(contactForm){
+if (contactForm) {
 
-contactForm.addEventListener("submit",function(e){
+    contactForm.addEventListener("submit", function (e) {
 
-e.preventDefault();
+        e.preventDefault();
 
-alert("Message Sent Successfully!");
+        emailjs.send(
+            "service_j2fygrc",
+            "template_bq50r5q",
+            {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value
+            }
+        )
+        .then(() => {
 
-this.reset();
+            showNotification("Message sent successfully!", "success");
 
-});
+            contactForm.reset();
+
+        })
+        .catch((error) => {
+
+            console.error(error);
+
+           showNotification("Failed to send message!", "error");
+
+        });
+
+    });
+
 }
-});
+function showNotification(message, type) {
+
+    const notification = document.createElement("div");
+
+    notification.className = `notification ${type}`;
+
+    notification.innerText = message;
+
+    document.body.appendChild(notification);
+
+    setTimeout(() => {
+        notification.classList.add("show");
+    }, 100);
+
+    setTimeout(() => {
+
+        notification.classList.remove("show");
+
+        setTimeout(() => {
+            notification.remove();
+        }, 300);
+
+    }, 3000);
+}
