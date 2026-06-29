@@ -36,7 +36,7 @@ nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px;
+padding:10px;
 backdrop-filter:blur(10px);
 background:rgba(255,255,255,0.05);
 position:sticky;
@@ -65,14 +65,14 @@ cursor:pointer;
 color:var(--text-color);
 }
 
-/* MODERN HERO HEADER*/
+/* HERO HEADER*/
 
 .hero-modern{
 display:flex;
 justify-content:space-between;
 align-items:center;
-min-height:100vh;
-padding:120px 10%;
+min-height:10vh;
+padding:20px 10%;
 background:linear-gradient(270deg,#020617,#0f172a,#1e293b);
 background-size:600% 600%;
 animation:gradientMove 12s ease infinite;
