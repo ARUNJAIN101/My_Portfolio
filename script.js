@@ -72,7 +72,7 @@ toggleBtn.textContent = "🌙";
 
 // CONTACT FORM EMAILJS
 
-emailjs.init("tAGIIQG3sWUORy9t4");
+emailjs.init("lKaF9Yw4U6kmMwVG2");
 
 const contactForm = document.getElementById("contactForm");
 
@@ -99,12 +99,15 @@ if (contactForm) {
 
         })
         .catch((error) => {
+    console.error("EmailJS error:", error);
+    console.error("Status:", error.status);
+    console.error("Text:", error.text);
 
-            console.error(error);
-
-           showNotification("Failed to send message!", "error");
-
-        });
+    showNotification(
+        `Failed: ${error.text || "Check browser console"}`,
+        "error"
+    );
+});
 
     });
 
